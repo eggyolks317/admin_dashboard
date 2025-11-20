@@ -4,3 +4,20 @@
 .flex {
   display: flex;
 }
+#logo {
+  width: 50px;
+}
+#sidebar {
+  flex-direction: column;
+  width: 20vw;
+}
+#sidebar .container {
+  grid-template-columns: 1fr 4fr;
+}
+#pages_section {
+  grid-template-rows: repeat(6, 1fr);
+}
+.pages_icon,
+.help_icon {
+  width: 40px;
+}

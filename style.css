@@ -1,3 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+:root {
+  --primary_color: #ffc742;
+}
+body {
+  font-family: Space Mono;
+}
+#main_container {
+  height: 100vh;
+}
 .grid {
   display: grid;
 }
@@ -6,18 +16,44 @@
 }
 #logo {
   width: 50px;
+  justify-self: center;
+  fill: white;
 }
 #sidebar {
   flex-direction: column;
-  width: 20vw;
+  color: white;
+  gap: 30px;
+  padding: 20px;
+  background-color: var(--primary_color);
+  width: 15vw;
 }
 #sidebar .container {
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
 }
 #pages_section {
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(6, mincontent);
+}
+#help_section {
+  grid-template-rows: repeat(3, 1fr);
+}
+
+#pages_section,
+#help_section {
+  row-gap: 10px;
 }
 .pages_icon,
 .help_icon {
-  width: 40px;
+  fill: white;
+  width: 25px;
+  justify-self: center;
+}
+#dashboard_text {
+  font-size: large;
+  font-weight: bold;
+}
+#dashboard_text,
+.pages_text,
+.help_text {
+  margin: 0;
 }

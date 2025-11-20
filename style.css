@@ -50,7 +50,7 @@ body {
   justify-self: center;
 }
 #dashboard_text {
-  font-size: large;
+  font-size: clamp(20px, 1vw, 30px);
   font-weight: bold;
 }
 #dashboard_text,
@@ -106,10 +106,11 @@ body {
   flex: 5;
 }
 #section1 {
+  justify-content: space-between;
   height: 10vh;
 }
 #greeting_section {
-  gap: 15px;
+  gap: 30px;
 }
 #greet {
   justify-content: center;
@@ -119,12 +120,26 @@ body {
   margin: 0;
 }
 #greet > p + p {
-  font-size: x-large;
+  font-size: clamp(20px, 1vw, 30px);
   font-weight: bold;
 }
-
+#buttons {
+  gap: 30px;
+  align-items: center;
+}
+button {
+  background-color: var(--primary_color);
+  border: 0;
+  width: 8vw;
+  height: 5vh;
+  color: white;
+  font-weight: 500;
+  font-family: Space Mono;
+  border-radius: 50px;
+  font-size: 1vw;
+}
 #board {
-  padding: 30px 10px;
+  padding: 20px;
   background-color: var(--secondary_color);
   flex: 1 0 0;
 }

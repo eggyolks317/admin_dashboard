@@ -62,17 +62,21 @@ body {
 .main_icon {
   width: 20px;
 }
+
+/* right side */
 #header {
-  flex: 1;
-  align-content: center;
+  height: 5vh;
   justify-content: space-between;
+}
+#header,
+#section1 {
   padding: 10px 40px;
 }
 #search_section {
   align-self: center;
   height: 60%;
   gap: 10px;
-  align-content: center;
+  align-items: center;
 }
 #search_bar {
   background-color: var(--secondary_color);
@@ -102,9 +106,13 @@ body {
   flex: 5;
 }
 #section1 {
-  flex: 1;
+  height: 10vh;
+}
+#greeting_section {
+  gap: 15px;
 }
 #greet {
+  justify-content: center;
   flex-direction: column;
 }
 #greet p {
@@ -116,5 +124,25 @@ body {
 }
 
 #board {
-  flex: 7;
+  padding: 30px 10px;
+  background-color: var(--secondary_color);
+  flex: 1 0 0;
+}
+#project_section {
+  flex-direction: column;
+  flex: 3 0 0;
+}
+#announcement_section,
+#trend_section {
+  flex-direction: column;
+  flex: 1;
+}
+#right_section {
+  flex-direction: column;
+  flex: 1;
+}
+#projects {
+  grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+}
+.project {
 }

@@ -63,7 +63,7 @@ body {
   width: 20px;
 }
 #header {
-  height: 5vh;
+  flex: 1;
   align-content: center;
   justify-content: space-between;
   padding: 10px 40px;
@@ -86,7 +86,7 @@ body {
   outline-color: #ffc742;
   background-color: white;
 }
-#profile_pic {
+.profile_pic {
   border-radius: 50%;
 }
 #profile_section {
@@ -100,4 +100,21 @@ body {
 #main_content {
   flex-direction: column;
   flex: 5;
+}
+#section1 {
+  flex: 1;
+}
+#greet {
+  flex-direction: column;
+}
+#greet p {
+  margin: 0;
+}
+#greet > p + p {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+#board {
+  flex: 7;
 }

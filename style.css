@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 :root {
   --primary_color: #ffc742;
+  --secondary_color: #f2f2f2;
 }
 body {
   font-family: Space Mono;
@@ -20,12 +21,12 @@ body {
   fill: white;
 }
 #sidebar {
+  flex: 1;
   flex-direction: column;
   color: white;
   gap: 30px;
   padding: 20px;
   background-color: var(--primary_color);
-  width: 15vw;
 }
 #sidebar .container {
   grid-template-columns: 1fr 2fr;
@@ -56,4 +57,47 @@ body {
 .pages_text,
 .help_text {
   margin: 0;
+}
+
+.main_icon {
+  width: 20px;
+}
+#header {
+  height: 5vh;
+  align-content: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+}
+#search_section {
+  align-self: center;
+  height: 60%;
+  gap: 10px;
+  align-content: center;
+}
+#search_bar {
+  background-color: var(--secondary_color);
+  border: 0px;
+  border-radius: 20px;
+  width: 45vw;
+  font-family: Space Mono;
+  padding: 15px;
+}
+#search_bar:focus {
+  outline-color: #ffc742;
+  background-color: white;
+}
+#profile_pic {
+  border-radius: 50%;
+}
+#profile_section {
+  align-content: center;
+  gap: 25px;
+}
+.main_text {
+  font-weight: bold;
+  align-self: center;
+}
+#main_content {
+  flex-direction: column;
+  flex: 5;
 }

@@ -2,6 +2,7 @@
 :root {
   --primary_color: #ffc742;
   --secondary_color: #f2f2f2;
+  --project_color: #a1edde;
 }
 body {
   font-family: Space Mono;
@@ -24,6 +25,7 @@ body {
   flex: 1;
   flex-direction: column;
   color: white;
+  height: 100%;
   gap: 30px;
   padding: 20px;
   background-color: var(--primary_color);
@@ -142,6 +144,7 @@ button {
   padding: 20px;
   background-color: var(--secondary_color);
   flex: 1 0 0;
+  gap: 20px;
 }
 #project_section {
   flex-direction: column;
@@ -154,10 +157,104 @@ button {
 }
 #right_section {
   flex-direction: column;
+  gap: 20px;
   flex: 1;
 }
 #projects {
   grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  gap: 20px;
+  flex: 1;
 }
 .project {
+  flex-direction: column;
+  border: 0;
+  box-shadow: 1px 1px 5px var(--primary_color);
+  box-shadow: -5px 0px 0px 0px var(--project_color);
+  border-radius: 20px;
+  padding: 35px 20px;
+  justify-content: space-between;
+  background-color: white;
+}
+.project p,
+.announcement p {
+  margin: 0;
+}
+.project .project_name,
+.announcement .announcement_title {
+  font-weight: bold;
+  font-size: small;
+}
+.project .project_descripition,
+.announcement .announcement_description {
+  color: grey;
+  font-size: x-small;
+}
+.project .project_icons_container {
+  align-self: flex-end;
+  gap: 10px;
+}
+.project .project_icons {
+  width: 1.5vw;
+  fill: grey;
+}
+
+#announcements,
+#trends {
+  flex-direction: column;
+  background-color: white;
+  border-radius: 30px;
+  padding: 30px;
+}
+.announcement {
+  padding: 10px 0px;
+  border-bottom: 1px solid grey;
+}
+.announcement:last-child {
+  border: 0;
+  padding-top: 10px;
+}
+
+.trend {
+  align-items: center;
+  gap: 10px;
+}
+#trends {
+  gap: 10px;
+}
+
+.trend_icons {
+  width: 3vw;
+  padding: 0.5vw;
+  height: fit-content;
+  border-radius: 50%;
+}
+.trend_info p {
+  margin: 0;
+}
+.trend_info {
+  justify-content: center;
+  width: 70%;
+}
+.trend_title {
+  font-weight: bold;
+  font-size: small;
+}
+.trend_description {
+  font-weight: lighter;
+  font-style: italic;
+  color: grey;
+  font-size: x-small;
+}
+
+#horse_icon {
+  fill: tomato;
+  background-color: lightblue;
+}
+#robot_icon {
+  fill: rgb(223, 185, 178);
+  background-color: rgb(43, 130, 94);
+}
+#pumpkin_icon {
+  fill: orange;
+  background-color: brown;
 }

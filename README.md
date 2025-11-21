@@ -6,3 +6,4 @@ Odin Project: Admin Dashboard
 * Grid Layout
 * Flex styling
 * Grid styling
+* CSS Pseudo-classes

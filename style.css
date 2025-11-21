@@ -156,6 +156,7 @@ button {
   flex: 1;
 }
 #right_section {
+  height: 100%;
   flex-direction: column;
   gap: 20px;
   flex: 1;

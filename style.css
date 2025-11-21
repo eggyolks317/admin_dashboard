@@ -170,8 +170,8 @@ button {
   flex-direction: column;
   border: 0;
   box-shadow: 1px 1px 5px var(--primary_color);
-  box-shadow: -5px 0px 0px 0px var(--project_color);
-  border-radius: 20px;
+  border-left: 10px solid var(--project_color);
+  border-radius: 10px;
   padding: 35px 20px;
   justify-content: space-between;
   background-color: white;

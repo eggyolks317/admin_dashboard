@@ -169,7 +169,7 @@ button {
 .project {
   flex-direction: column;
   border: 0;
-  box-shadow: 1px 1px 5px var(--primary_color);
+  box-shadow: 1px 1px 5px lightgrey;
   border-left: 10px solid var(--project_color);
   border-radius: 10px;
   padding: 35px 20px;
